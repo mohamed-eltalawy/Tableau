@@ -1,0 +1,2889 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneFriendlyName />
+  </document-format-change-manifest>
+  <repository-location id='CallCenterOverview_17540311332860' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' inline='true' name='federated.09k8ld418agk4y1911n620orf01b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' name='textscan.1n1ro5i1iy0eou18f4ixy02282s4'>
+            <connection class='textscan' directory='D:/BA/project/Tableau/Tableau Public for Beginners Data Visualization Basics' filename='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1n1ro5i1iy0eou18f4ixy02282s4' name='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv' table='[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='id' ordinal='0' />
+            <column datatype='string' name='customer_name' ordinal='1' />
+            <column datatype='string' name='sentiment' ordinal='2' />
+            <column datatype='integer' name='csat_score' ordinal='3' />
+            <column datatype='date' name='call_timestamp' ordinal='4' />
+            <column datatype='string' name='reason' ordinal='5' />
+            <column datatype='string' name='city' ordinal='6' />
+            <column datatype='string' name='state' ordinal='7' />
+            <column datatype='string' name='channel' ordinal='8' />
+            <column datatype='string' name='response_time' ordinal='9' />
+            <column datatype='integer' name='call duration in minutes' ordinal='10' />
+            <column datatype='string' name='call_center' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_name]</local-name>
+            <parent-name>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv]</parent-name>
+            <remote-alias>customer_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sentiment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sentiment]</local-name>
+            <parent-name>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv]</parent-name>
+            <remote-alias>sentiment</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>csat_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[csat_score]</local-name>
+            <parent-name>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv]</parent-name>
+            <remote-alias>csat_score</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>call_timestamp</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[call_timestamp]</local-name>
+            <parent-name>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv]</parent-name>
+            <remote-alias>call_timestamp</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reason]</local-name>
+            <parent-name>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv]</parent-name>
+            <remote-alias>reason</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[channel]</local-name>
+            <parent-name>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv]</parent-name>
+            <remote-alias>channel</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response_time</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[response_time]</local-name>
+            <parent-name>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv]</parent-name>
+            <remote-alias>response_time</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>call duration in minutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[call duration in minutes]</local-name>
+            <parent-name>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv]</parent-name>
+            <remote-alias>call duration in minutes</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>call_center</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[call_center]</local-name>
+            <parent-name>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv]</parent-name>
+            <remote-alias>call_center</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv' datatype='table' name='[__tableau_internal_object_id__].[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]' role='measure' type='quantitative' />
+      <column caption='Call Duration In Minutes' datatype='integer' name='[call duration in minutes]' role='measure' type='quantitative' />
+      <column caption='Call Center' datatype='string' name='[call_center]' role='dimension' type='nominal' />
+      <column caption='Call Timestamp' datatype='date' name='[call_timestamp]' role='dimension' type='ordinal' />
+      <column caption='Channel' datatype='string' name='[channel]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Csat Score' datatype='integer' name='[csat_score]' role='measure' type='quantitative' />
+      <column caption='Customer Name' datatype='string' name='[customer_name]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='string' datatype-customized='true' name='[id]' role='dimension' type='nominal' />
+      <column caption='Reason' datatype='string' name='[reason]' role='dimension' type='nominal' />
+      <column caption='Response Time' datatype='string' name='[response_time]' role='dimension' type='nominal' />
+      <column caption='Sentiment' datatype='string' name='[sentiment]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[__tableau_internal_object_id__].[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[reason]' derivation='Count' name='[cnt:reason:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[reason]' derivation='None' name='[none:reason:nk]' pivot='key' type='nominal' />
+      <column-instance column='[call duration in minutes]' derivation='Sum' name='[sum:call duration in minutes:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[csat_score]' derivation='Sum' name='[sum:csat_score:qk]' pivot='key' type='quantitative' />
+      <drill-paths>
+        <drill-path name='state, city'>
+          <field>[state]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/11/AppData/Local/Temp/TableauTemp/#TableauTemp_11hfm2405b1o7a1f7yd151j9laay.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/01/2025 04:02:02 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32941</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32941</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sentiment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sentiment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sentiment</remote-alias>
+              <ordinal>2</ordinal>
+              <family>hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>csat_score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[csat_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>csat_score</remote-alias>
+              <ordinal>3</ordinal>
+              <family>hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>call_timestamp</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[call_timestamp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>call_timestamp</remote-alias>
+              <ordinal>4</ordinal>
+              <family>hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reason</remote-alias>
+              <ordinal>5</ordinal>
+              <family>hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>city</remote-alias>
+              <ordinal>6</ordinal>
+              <family>hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>806</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>7</ordinal>
+              <family>hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[channel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channel</remote-alias>
+              <ordinal>8</ordinal>
+              <family>hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response_time</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[response_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response_time</remote-alias>
+              <ordinal>9</ordinal>
+              <family>hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>call duration in minutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[call duration in minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>call duration in minutes</remote-alias>
+              <ordinal>10</ordinal>
+              <family>hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>call_center</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[call_center]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>call_center</remote-alias>
+              <ordinal>11</ordinal>
+              <family>hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.09k8ld418agk4y1911n620orf01b].[cnt:reason:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.09k8ld418agk4y1911n620orf01b].[none:reason:nk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.09k8ld418agk4y1911n620orf01b].[sum:csat_score:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.09k8ld418agk4y1911n620orf01b].[__tableau_internal_object_id__].[cnt:hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:reason:nk]' palette='brown_10_0' type='palette'>
+            <map to='#9f3632'>
+              <bucket>&quot;Service Outage&quot;</bucket>
+            </map>
+            <map to='#d18954'>
+              <bucket>&quot;Payments&quot;</bucket>
+            </map>
+            <map to='#eedbbd'>
+              <bucket>&quot;Billing Question&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv' id='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv_E09B700C09264EA4AC6FDFC67C983026'>
+            <properties context=''>
+              <relation connection='textscan.1n1ro5i1iy0eou18f4ixy02282s4' name='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center.csv' table='[hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='id' ordinal='0' />
+                  <column datatype='string' name='customer_name' ordinal='1' />
+                  <column datatype='string' name='sentiment' ordinal='2' />
+                  <column datatype='integer' name='csat_score' ordinal='3' />
+                  <column datatype='date' name='call_timestamp' ordinal='4' />
+                  <column datatype='string' name='reason' ordinal='5' />
+                  <column datatype='string' name='city' ordinal='6' />
+                  <column datatype='string' name='state' ordinal='7' />
+                  <column datatype='string' name='channel' ordinal='8' />
+                  <column datatype='string' name='response_time' ordinal='9' />
+                  <column datatype='integer' name='call duration in minutes' ordinal='10' />
+                  <column datatype='string' name='call_center' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_C00D5F96D772465E9B4B9F37C81C5DDA]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Minutes By Reason' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Reason' />
+        <param name='target' value='Minutes By Reason' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Call Duration By State'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#b6992d'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' name='federated.09k8ld418agk4y1911n620orf01b' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.09k8ld418agk4y1911n620orf01b'>
+            <column caption='Call Duration In Minutes' datatype='integer' name='[call duration in minutes]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[call duration in minutes]' derivation='Sum' name='[sum:call duration in minutes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[Longitude (generated)]' field-type='quantitative' max='33529200.10051287' min='24763068.106525566' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[Latitude (generated)]' field-type='quantitative' max='6640025.9137579706' min='2851471.5225001364' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' palette='brown_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' />
+              <lod column='[federated.09k8ld418agk4y1911n620orf01b].[none:state:nk]' />
+              <geometry column='[federated.09k8ld418agk4y1911n620orf01b].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#757575' fontsize='12'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[none:state:nk]>	]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='wrap' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09k8ld418agk4y1911n620orf01b].[Latitude (generated)]</rows>
+        <cols>[federated.09k8ld418agk4y1911n620orf01b].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{2370B1CE-F802-4B55-B196-A1F323F5FEDB}' />
+    </worksheet>
+    <worksheet name='Daily Call Duration In Minutes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' name='federated.09k8ld418agk4y1911n620orf01b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09k8ld418agk4y1911n620orf01b'>
+            <column caption='Call Duration In Minutes' datatype='integer' name='[call duration in minutes]' role='measure' type='quantitative' />
+            <column caption='Call Timestamp' datatype='date' name='[call_timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[call duration in minutes]' derivation='Sum' name='[sum:call duration in minutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[call_timestamp]' derivation='Day-Trunc' name='[tdy:call_timestamp:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[tdy:call_timestamp:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+            <encoding attr='space' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[tdy:call_timestamp:qk]' field-type='quantitative' max='#2020-11-05 12:54:43.424#' min='#2020-09-25 04:24:40.312#' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' field-type='quantitative' max='35219' min='-5498' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#757575'>Æ&#9;</run>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[tdy:call_timestamp:qk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#757575'>Æ&#9;</run>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ba9582' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]</rows>
+        <cols>[federated.09k8ld418agk4y1911n620orf01b].[tdy:call_timestamp:qk]</cols>
+      </table>
+      <simple-id uuid='{797ABAA1-12D9-4B7B-937B-825CBC4EB66F}' />
+    </worksheet>
+    <worksheet name='Daily Customers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' name='federated.09k8ld418agk4y1911n620orf01b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09k8ld418agk4y1911n620orf01b'>
+            <column caption='Call Timestamp' datatype='date' name='[call_timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[customer_name]' derivation='CountD' name='[ctd:customer_name:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer Name' datatype='string' name='[customer_name]' role='dimension' type='nominal' />
+            <column-instance column='[call_timestamp]' derivation='Day-Trunc' name='[tdy:call_timestamp:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[tdy:call_timestamp:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[ctd:customer_name:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[tdy:call_timestamp:qk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[ctd:customer_name:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ba9582' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09k8ld418agk4y1911n620orf01b].[ctd:customer_name:qk]</rows>
+        <cols>[federated.09k8ld418agk4y1911n620orf01b].[tdy:call_timestamp:qk]</cols>
+      </table>
+      <simple-id uuid='{B6DB84F2-F7B1-4F20-BB55-1C9CEAF37E3A}' />
+    </worksheet>
+    <worksheet name='Daily Product Sold'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' name='federated.09k8ld418agk4y1911n620orf01b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09k8ld418agk4y1911n620orf01b'>
+            <column caption='Call Timestamp' datatype='date' name='[call_timestamp]' role='dimension' type='ordinal' />
+            <column caption='Csat Score' datatype='integer' name='[csat_score]' role='measure' type='quantitative' />
+            <column-instance column='[csat_score]' derivation='Sum' name='[sum:csat_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[call_timestamp]' derivation='Day-Trunc' name='[tdy:call_timestamp:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.09k8ld418agk4y1911n620orf01b].[sum:csat_score:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.09k8ld418agk4y1911n620orf01b].[sum:csat_score:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[tdy:call_timestamp:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='display' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[sum:csat_score:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[tdy:call_timestamp:qk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[sum:csat_score:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ba9582' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09k8ld418agk4y1911n620orf01b].[sum:csat_score:qk]</rows>
+        <cols>[federated.09k8ld418agk4y1911n620orf01b].[tdy:call_timestamp:qk]</cols>
+      </table>
+      <simple-id uuid='{32830992-13AC-400D-B384-D5148F5E086F}' />
+    </worksheet>
+    <worksheet name='Daily Total Call'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' name='federated.09k8ld418agk4y1911n620orf01b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09k8ld418agk4y1911n620orf01b'>
+            <column caption='Call Timestamp' datatype='date' name='[call_timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='CountD' name='[ctd:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='string' datatype-customized='true' name='[id]' role='dimension' type='nominal' />
+            <column-instance column='[call_timestamp]' derivation='Day-Trunc' name='[tdy:call_timestamp:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[tdy:call_timestamp:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[ctd:id:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[tdy:call_timestamp:qk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[ctd:id:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ba9582' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09k8ld418agk4y1911n620orf01b].[ctd:id:qk]</rows>
+        <cols>[federated.09k8ld418agk4y1911n620orf01b].[tdy:call_timestamp:qk]</cols>
+      </table>
+      <simple-id uuid='{A3174105-8E3B-4C16-8743-5FFC946635AA}' />
+    </worksheet>
+    <worksheet name='Minutes By Call Center'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#b6992d'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' name='federated.09k8ld418agk4y1911n620orf01b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09k8ld418agk4y1911n620orf01b'>
+            <column caption='Call Duration In Minutes' datatype='integer' name='[call duration in minutes]' role='measure' type='quantitative' />
+            <column caption='Call Center' datatype='string' name='[call_center]' role='dimension' type='nominal' />
+            <column-instance column='[call_center]' derivation='None' name='[none:call_center:nk]' pivot='key' type='nominal' />
+            <column-instance column='[call duration in minutes]' derivation='Sum' name='[sum:call duration in minutes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09k8ld418agk4y1911n620orf01b].[none:call_center:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' value='n#,##0,.00K;-#,##0,.00K' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[none:call_center:nk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#757575'>Æ&#9;</run>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.95552486181259155' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#9d7660' />
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]</rows>
+        <cols>[federated.09k8ld418agk4y1911n620orf01b].[none:call_center:nk]</cols>
+      </table>
+      <simple-id uuid='{F430A3C2-38C1-4FF3-8179-51E274407A0D}' />
+    </worksheet>
+    <worksheet name='Minutes By Channel'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#b6992d'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' name='federated.09k8ld418agk4y1911n620orf01b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09k8ld418agk4y1911n620orf01b'>
+            <column caption='Call Duration In Minutes' datatype='integer' name='[call duration in minutes]' role='measure' type='quantitative' />
+            <column caption='Channel' datatype='string' name='[channel]' role='dimension' type='nominal' />
+            <column-instance column='[channel]' derivation='None' name='[none:channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[call duration in minutes]' derivation='Sum' name='[sum:call duration in minutes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09k8ld418agk4y1911n620orf01b].[none:channel:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' value='n#,##0,.00K;-#,##0,.00K' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[none:channel:nk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#757575'>Æ&#9;</run>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.95552486181259155' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#9d7660' />
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]</rows>
+        <cols>[federated.09k8ld418agk4y1911n620orf01b].[none:channel:nk]</cols>
+      </table>
+      <simple-id uuid='{6EB07735-5E12-46A8-9226-89CB13FB88A4}' />
+    </worksheet>
+    <worksheet name='Minutes By Reason'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#b6992d'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' name='federated.09k8ld418agk4y1911n620orf01b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09k8ld418agk4y1911n620orf01b'>
+            <column caption='Call Duration In Minutes' datatype='integer' name='[call duration in minutes]' role='measure' type='quantitative' />
+            <column-instance column='[reason]' derivation='None' name='[none:reason:nk]' pivot='key' type='nominal' />
+            <column caption='Reason' datatype='string' name='[reason]' role='dimension' type='nominal' />
+            <column-instance column='[call duration in minutes]' derivation='Sum' name='[sum:call duration in minutes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' value='n#,##0,.00K;-#,##0,.00K' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.09k8ld418agk4y1911n620orf01b].[none:reason:nk]' />
+              <wedge-size column='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' />
+              <text column='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' />
+              <text column='[federated.09k8ld418agk4y1911n620orf01b].[none:reason:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='8'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[none:reason:nk]>]]></run>
+                <run><![CDATA[
+<[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]>
+]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-orientation' value='0' />
+                <format attr='wrap' value='on' />
+                <format attr='vertical-align' value='top' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.3953038454055786' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{EDDCDFBC-3D06-444B-BF08-8EAD650CF67A}' />
+    </worksheet>
+    <worksheet name='Minutes By Response Time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#b6992d'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' name='federated.09k8ld418agk4y1911n620orf01b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09k8ld418agk4y1911n620orf01b'>
+            <column caption='Call Duration In Minutes' datatype='integer' name='[call duration in minutes]' role='measure' type='quantitative' />
+            <column-instance column='[response_time]' derivation='None' name='[none:response_time:nk]' pivot='key' type='nominal' />
+            <column caption='Response Time' datatype='string' name='[response_time]' role='dimension' type='nominal' />
+            <column-instance column='[call duration in minutes]' derivation='Sum' name='[sum:call duration in minutes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09k8ld418agk4y1911n620orf01b].[none:response_time:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' value='n#,##0,.00K;-#,##0,.00K' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[none:response_time:nk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#757575'>Æ&#9;</run>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.81259667873382568' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#9d7660' />
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]</rows>
+        <cols>[federated.09k8ld418agk4y1911n620orf01b].[none:response_time:nk]</cols>
+      </table>
+      <simple-id uuid='{18E3D57E-6CB3-488B-A293-DF24A221A08E}' />
+    </worksheet>
+    <worksheet name='Minutes By Sentiment'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#b6992d'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' name='federated.09k8ld418agk4y1911n620orf01b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09k8ld418agk4y1911n620orf01b'>
+            <column caption='Call Duration In Minutes' datatype='integer' name='[call duration in minutes]' role='measure' type='quantitative' />
+            <column-instance column='[sentiment]' derivation='None' name='[none:sentiment:nk]' pivot='key' type='nominal' />
+            <column caption='Sentiment' datatype='string' name='[sentiment]' role='dimension' type='nominal' />
+            <column-instance column='[call duration in minutes]' derivation='Sum' name='[sum:call duration in minutes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09k8ld418agk4y1911n620orf01b].[none:sentiment:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' value='n#,##0,.00K;-#,##0,.00K' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[none:sentiment:nk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#757575'>Æ&#9;</run>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.81259667873382568' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#9d7660' />
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]</rows>
+        <cols>[federated.09k8ld418agk4y1911n620orf01b].[none:sentiment:nk]</cols>
+      </table>
+      <simple-id uuid='{55AD3CDF-F435-4A84-B3AC-2B22B66AE06D}' />
+    </worksheet>
+    <worksheet name='Total Call'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' name='federated.09k8ld418agk4y1911n620orf01b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09k8ld418agk4y1911n620orf01b'>
+            <column caption='Call Duration In Minutes' datatype='integer' name='[call duration in minutes]' role='measure' type='quantitative' />
+            <column-instance column='[call duration in minutes]' derivation='Count' name='[cnt:call duration in minutes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#9d7660' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.09k8ld418agk4y1911n620orf01b].[cnt:call duration in minutes:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true'>&lt;</run>
+                <run bold='true'>[federated.09k8ld418agk4y1911n620orf01b].[cnt:call duration in minutes:qk]</run>
+                <run bold='true'>&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='12'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[cnt:call duration in minutes:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='12'>Total Calls</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{CEA82F4B-A6AA-473B-9506-63BB0411FD01}' />
+    </worksheet>
+    <worksheet name='Total Call Duration In Minutes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' name='federated.09k8ld418agk4y1911n620orf01b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09k8ld418agk4y1911n620orf01b'>
+            <column caption='Call Duration In Minutes' datatype='integer' name='[call duration in minutes]' role='measure' type='quantitative' />
+            <column-instance column='[call duration in minutes]' derivation='Sum' name='[sum:call duration in minutes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' value='n#,##0,K;-#,##0,K' />
+            <format attr='color' value='#9d7660' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1'>Total Call Duration In Minutes</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'>Total Call Duration In Minutes</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{2F372698-B57A-444C-8DB4-0CD5400928C4}' />
+    </worksheet>
+    <worksheet name='Total Customers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' name='federated.09k8ld418agk4y1911n620orf01b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09k8ld418agk4y1911n620orf01b'>
+            <column-instance column='[id]' derivation='CountD' name='[ctd:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='string' datatype-customized='true' name='[id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#9d7660' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.09k8ld418agk4y1911n620orf01b].[ctd:id:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#757575'>Distinct count of Id:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[ctd:id:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[ctd:id:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='12'>Total Customers</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{E7D56EFE-B156-49D3-A2AD-28439AAF32DA}' />
+    </worksheet>
+    <worksheet name='Total Product Sold'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hkYX1UhcTaKkKqDWVcZqqA_73b3924456514af5b637d3a8f6a4a0f1_Call-Center' name='federated.09k8ld418agk4y1911n620orf01b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09k8ld418agk4y1911n620orf01b'>
+            <column caption='Csat Score' datatype='integer' name='[csat_score]' role='measure' type='quantitative' />
+            <column-instance column='[csat_score]' derivation='Sum' name='[sum:csat_score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.09k8ld418agk4y1911n620orf01b].[sum:csat_score:qk]' value='n#,##0,.00K;-#,##0,.00K' />
+            <format attr='color' value='#9d7660' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.09k8ld418agk4y1911n620orf01b].[sum:csat_score:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.09k8ld418agk4y1911n620orf01b].[sum:csat_score:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='12'>Total Product Sold</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BF55D6F4-AEFE-4A9A-9B8B-0FD0826ABCB3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Call Center Overview'>
+      <style />
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' preset-index='8' sizing-mode='fixed' />
+      <zones>
+        <zone friendly-name='Horizontal Container T' h='8889' id='5' param='horz' type-v2='layout-flow' w='98688' x='625' y='1000'>
+          <zone forceUpdate='true' h='8889' id='39' type-v2='text' w='98688' x='625' y='1000'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#ad8936' fontsize='20'>Call Center Overview</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#b6992d' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone friendly-name='Vertical Container A' h='78000' id='6' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='20250' x='813' y='10222'>
+          <zone friendly-name='Vertical Container 1.1' h='19445' id='22' param='vert' type-v2='layout-flow' w='20125' x='875' y='10333'>
+            <zone fixed-size='90' h='10889' id='41' is-fixed='true' name='Total Call Duration In Minutes' show-title='false' w='19499' x='1188' y='10888'>
+              <layout-cache type-h='cell' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='padding' value='10' />
+              </zone-style>
+            </zone>
+            <zone h='7446' id='40' name='Daily Call Duration In Minutes' show-title='false' w='19499' x='1188' y='21777'>
+              <layout-cache minheight='100' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#b6992d' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone friendly-name='Vertical Container 1.2' h='19444' id='19' param='vert' type-v2='layout-flow' w='20125' x='875' y='29778'>
+            <zone fixed-size='63' h='7889' id='49' is-fixed='true' name='Total Call' show-title='false' w='18249' x='1813' y='31444'>
+              <layout-cache type-h='cell' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='8223' id='48' name='Daily Total Call' show-title='false' w='18249' x='1813' y='39333'>
+              <layout-cache minheight='100' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#b6992d' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+              <format attr='padding' value='10' />
+            </zone-style>
+          </zone>
+          <zone friendly-name='Vertical Container 1.3' h='19445' id='16' param='vert' type-v2='layout-flow' w='20125' x='875' y='49222'>
+            <zone fixed-size='77' h='9445' id='50' is-fixed='true' name='Total Customers' show-title='false' w='18249' x='1813' y='50888'>
+              <layout-cache type-h='cell' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='6668' id='51' name='Daily Customers' show-title='false' w='18249' x='1813' y='60333'>
+              <layout-cache minheight='100' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#b6992d' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+              <format attr='padding' value='10' />
+            </zone-style>
+          </zone>
+          <zone friendly-name='Vertical Container 1.4' h='19444' id='7' param='vert' type-v2='layout-flow' w='20125' x='875' y='68667'>
+            <zone fixed-size='78' h='9556' id='52' is-fixed='true' name='Total Product Sold' show-title='false' w='18249' x='1813' y='70333'>
+              <layout-cache type-h='cell' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='6556' id='53' name='Daily Product Sold' show-title='false' w='18249' x='1813' y='79889'>
+              <layout-cache minheight='100' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#b6992d' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+              <format attr='padding' value='10' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#b6992d' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone friendly-name='Vertical Container B' h='77556' id='23' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='27250' x='22125' y='10111'>
+          <zone friendly-name='Vertical Container 2.1' h='25778' id='31' param='vert' type-v2='layout-flow' w='27125' x='22188' y='10222'>
+            <zone h='24668' id='54' name='Minutes By Channel' w='26499' x='22501' y='10777'>
+              <layout-cache minheight='175' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#b6992d' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone friendly-name='Vertical Container 2.2' h='25778' id='25' param='vert' type-v2='layout-flow' w='27125' x='22188' y='36000'>
+            <zone h='24668' id='55' name='Minutes By Call Center' w='26499' x='22501' y='36555'>
+              <layout-cache minheight='190' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#b6992d' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone friendly-name='Vertical Container 2.3' h='25778' id='29' param='vert' type-v2='layout-flow' w='27125' x='22188' y='61778'>
+            <zone h='24668' id='56' name='Minutes By Response Time' w='26499' x='22501' y='62333'>
+              <layout-cache minheight='190' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#b6992d' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#b6992d' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone friendly-name='Vertical Container C' h='46333' id='37' param='vert' type-v2='layout-flow' w='47688' x='50188' y='10000'>
+          <zone fixed-size='376' h='42667' id='57' is-fixed='true' name='Call Duration By State' w='47562' x='50251' y='10111'>
+            <layout-cache minheight='251' type-h='scalable' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#b6992d' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='48778' id='42' param='horz' type-v2='layout-flow' w='48813' x='49813' y='57333'>
+          <zone fixed-size='372' h='48778' id='47' is-fixed='true' param='vert' type-v2='layout-flow' w='23750' x='49813' y='57333'>
+            <zone fixed-size='264' h='30222' id='59' is-fixed='true' name='Minutes By Reason' w='23250' x='50063' y='57777'>
+              <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#b6992d' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='48778' id='45' param='vert' type-v2='layout-flow' w='25060' x='73563' y='57333'>
+            <zone fixed-size='264' h='30222' id='61' is-fixed='true' name='Minutes By Sentiment' w='24560' x='73813' y='57777'>
+              <layout-cache minheight='190' type-h='scalable' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#b6992d' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2150' minheight='2150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='73' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='72' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+                <zone forceUpdate='true' h='8889' id='39' type-v2='text' w='98688' x='625' y='1000'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#ad8936' fontsize='20'>Call Center Overview</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#b6992d' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42667' id='57' is-fixed='true' name='Call Duration By State' w='47562' x='50251' y='10111'>
+                  <layout-cache minheight='251' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='214' h='24668' id='54' is-fixed='true' name='Minutes By Channel' w='26499' x='22501' y='10777'>
+                  <layout-cache minheight='175' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='70' h='10889' id='41' is-fixed='true' name='Total Call Duration In Minutes' show-title='false' w='19499' x='1188' y='10888'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='59' h='7446' id='40' is-fixed='true' name='Daily Call Duration In Minutes' show-title='false' w='19499' x='1188' y='21777'>
+                  <layout-cache minheight='100' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='63' h='7889' id='49' is-fixed='true' name='Total Call' show-title='false' w='18249' x='1813' y='31444'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='214' h='24668' id='55' is-fixed='true' name='Minutes By Call Center' w='26499' x='22501' y='36555'>
+                  <layout-cache minheight='190' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='66' h='8223' id='48' is-fixed='true' name='Daily Total Call' show-title='false' w='18249' x='1813' y='39333'>
+                  <layout-cache minheight='100' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='77' h='9445' id='50' is-fixed='true' name='Total Customers' show-title='false' w='18249' x='1813' y='50888'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='262' h='30222' id='59' is-fixed='true' name='Minutes By Reason' w='23250' x='50063' y='57777'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#b6992d' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='262' h='30222' id='61' is-fixed='true' name='Minutes By Sentiment' w='24560' x='73813' y='57777'>
+                  <layout-cache minheight='190' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#b6992d' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='52' h='6668' id='51' is-fixed='true' name='Daily Customers' show-title='false' w='18249' x='1813' y='60333'>
+                  <layout-cache minheight='100' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='214' h='24668' id='56' is-fixed='true' name='Minutes By Response Time' w='26499' x='22501' y='62333'>
+                  <layout-cache minheight='190' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='78' h='9556' id='52' is-fixed='true' name='Total Product Sold' show-title='false' w='18249' x='1813' y='70333'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='51' h='6556' id='53' is-fixed='true' name='Daily Product Sold' show-title='false' w='18249' x='1813' y='79889'>
+                  <layout-cache minheight='100' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A5388B0C-4ADC-4356-A331-8538CCF28A85}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' maximized='true' name='Call Center Overview'>
+      <viewpoints>
+        <viewpoint name='Call Duration By State'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Daily Call Duration In Minutes'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Daily Customers'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Daily Product Sold'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Daily Total Call'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Minutes By Call Center'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Minutes By Channel'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Minutes By Reason'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Minutes By Response Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Minutes By Sentiment'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Call'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Call Duration In Minutes'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Customers'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Product Sold'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{6135782B-B70B-4DFB-A7B6-02BD0DE40679}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Call Duration By State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[none:state:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CC2B0125-7F70-4A98-A330-9CD1B8FA09A7}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Daily Call Duration In Minutes' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[yr:call_timestamp:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{66FD9E41-9D4F-437D-81C2-D48504189719}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Daily Customers' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.09k8ld418agk4y1911n620orf01b].[ctd:customer_name:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[yr:call_timestamp:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3042488F-D7AF-4622-9BE6-42014557FFFE}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Daily Product Sold' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09k8ld418agk4y1911n620orf01b].[tdy:call_timestamp:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09k8ld418agk4y1911n620orf01b].[sum:csat_score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09k8ld418agk4y1911n620orf01b].[sum:csat_score:qk]</field>
+                  <field>[federated.09k8ld418agk4y1911n620orf01b].[tdy:call_timestamp:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2151</value>
+                <value>#2020-10-05 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[yr:call_timestamp:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8EABB4D4-3FB2-49CF-9467-3F62EFD22B1E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Daily Total Call' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[ctd:id:qk]</field>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[yr:call_timestamp:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D699D739-A080-405E-A97A-46F6589E0778}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Minutes By Call Center' tab-color='#dec77b'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <fields>
+                  <field>[federated.09k8ld418agk4y1911n620orf01b].[none:call_center:nk]</field>
+                </fields>
+                <multibucket>
+                  <bucket>&quot;Los Angeles/CA&quot;</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[none:call_center:nk]</field>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[none:channel:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7FA8E523-B922-4D85-A4E6-030BB82E7A3B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Minutes By Channel' tab-color='#dec77b'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[none:channel:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3267054A-65CE-46B4-804E-426531734A3D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Minutes By Reason' tab-color='#a65200'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09k8ld418agk4y1911n620orf01b].[none:reason:nk]' show-title='false' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09k8ld418agk4y1911n620orf01b].[none:reason:nk]</field>
+                  <field>[federated.09k8ld418agk4y1911n620orf01b].[sum:call duration in minutes:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Billing Question&quot;</value>
+                <value>585934</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight field='[federated.09k8ld418agk4y1911n620orf01b].[none:reason:nk]'>
+          <bucket-selection />
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FD6913E5-7DA1-4A08-AF15-6DCB3A950375}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Minutes By Response Time' tab-color='#dec77b'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[none:channel:nk]</field>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[none:response_time:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D465FB10-E612-4353-8965-A511683C419A}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Minutes By Sentiment' tab-color='#dec77b'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[none:channel:nk]</field>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[none:response_time:nk]</field>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[none:sentiment:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C8F9DACA-B96F-4016-83DC-A9F90B80F9EA}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Call' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09k8ld418agk4y1911n620orf01b].[cnt:call duration in minutes:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>32941</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[ctd:id:ok]</field>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[none:id:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5A4E0F7B-3186-46C8-91C6-183EA1DFEAF5}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Call Duration In Minutes' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2081B42A-CA5B-4237-978C-CE6FE2860C80}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Customers' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09k8ld418agk4y1911n620orf01b].[ctd:id:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>32941</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09k8ld418agk4y1911n620orf01b].[none:id:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BCAFA819-EFF7-47C6-99B2-5EFF2DFB8239}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Product Sold' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09k8ld418agk4y1911n620orf01b].[sum:csat_score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>68085</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+      </viewpoint>
+      <simple-id uuid='{084D76E1-3BC6-40C3-A56C-392867812967}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Call Center Overview' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO29aWwc6Zmg+UTkHXlfTCaZvC+JOkqq03Xarru77Ha3PT2Y7p3uGQwGO71t
+      7L8FZn4tGtg/278WWGB7F4NtDHbH7ukDPRiXveW2rZKrylWuQ6XSSYnizSTzvu8rMmJ/pESJ
+      RVIkJUqkxHj+ZGbEF9/3RuT3xne+7yuoqqqioXFIEfdbAA2N/URTAI1Djf7OH5nouf2SQ0Nj
+      X9B//YC355n9kENDY1/QukAahxpNATQONZoCaBxqNAXQONRoCqCx7+RWv2Dm8x+Ris5unqCR
+      IrI4BUDkxtkNp6vZWWa/+BGrs1+w21VdTQE09pXolb8lV5IZeeoP0YlbVN92hWI+AUAxPb/u
+      VCn6GQvTFxg49YfYbXbaOy24usz0xQ82ToNqaDw8FDKZLCe+9S8A8HSPA7B4/v9FVow0G1XG
+      v/GvMdwlh/DMeSa/+UNEAYzBowBkFj8gk07RbpYYfPKP0TXD3Lj8CWazhXo5w8TL/wOxqz8j
+      tZrUFEBjPymi0/k3HB188k9Q1TbF5fdJxiP0erbOQdCbEIU7jzRJRJaZfOlfoTSS3Lj0c4aH
+      +7EGTjM8forM3E8p5IsMHH+HqmFBUwCN/cRKu51bd0SVS1z/5EcY7V3IpUVsQxN3zUGRG6jA
+      mg7IeQqJeebO/z0AJskLgE5nAkAUdCh3XK+NATT2EQNWM6TiYQDqlSzN/CxG/1OMPvl9XJ7g
+      tjkEQ4PMT32KCjQrWRS9F5vLw9Dpf8bIkz8g0Hds8wv1Ztr1AsKd26Ez0XPaVgiNh4qqyqxe
+      /gnlShHJO8HA+HMsX/wHmrKA3duH5J3EIUEqncMfHCIVPo+//6l1eaTm3ycdD6M3exl56vdo
+      5hcI3/gUQRTpGn0Nq0mmXDfg8vipZWdRzH1YJTPRa+9qCqBxuNG6QBqHGk0BNA41mgJoHGo0
+      BdA41KwbBFdLEWql6H7Ko6HxUBE0rxAPFu2lcrBZtxK8euMnWOw9+yXLY8OdU8m1UlSbWj7A
+      rFMArfLfO7VSlNDE9zZ1LKA5Gzi4bLoXSHtj7Z7tKrn2TA8m2iyQxqFGUwCNQ42mABoPFLmR
+      o61sn24HOdGoFfcio3VoCvCYEL/xdyze+AUAqpzl83f/R9pANn5x22uzsa92XM70b/8XFq/8
+      DQsX/x+a8uY1Oz73E1Zv/JTo4ieUEx9Ta+w4+7tQJrVyaS8yWodmEPOYoAoSemQUIB/5Ek/f
+      8wAoch0os/DVP2JxBtCZezCLNUz+5xBrM1RkK9GZn1EtruIdeJ1i5Neogh6zcxKhFaFSKWG0
+      9uLrngTA4jzCwLF/RmLmH5BbJXLRGwT6nyUV/gR//4uocpqm4qB/4tsA5MM/Jbn4C/JCHvfA
+      d1Aqs5RLaRSM9PYfZ/7Ke0gOL3ppABN58qUigpzHN/wH1NNf0JRlBL2LrtDQA3luWgvwGOH1
+      95BNxai32lhMHUvaejUFyBhtwwRH3qZZCdOqpVBUUOUCTVnEFTxNaOL3MAsZCsUyJmuQbOS3
+      NOsFBNGAwzOyVka9OMfy1H+hUlcxGGw0Skso7QKNRgsAtZFBNPnWydU19BbB0HGK+SRGyQeK
+      TD55GdQGJucEwZHfoVFaoFXL4h96m0BwhFIpSzZxBaPFSz65fSt2rxxYBVi4+DlXf/ML6tUy
+      c199wuUP3qNWKlCvlLn22/dpt1qkwgtkomEqhex+i3sgMLmfoJF+H8EQuGs6QQBVVVEUufNb
+      VVFUQDRjMNqRHCF6Rt/E2/cqXaEnidz4ydq1ZscoA8f+mC6/j0Ihhz84zOxX/4Cn/wUARGmI
+      Zn4KFVCVjT4aEsuf0T36NnZH97b3ozM6kRwh+sa/u/OHsEsOZBdIVVVy8VV6J06QXJolNHGS
+      UjZFfHGGSiFHvVyg3ZZJhOeol4s89dYP9lvkfcfmHUdARLIPYO0+RT1nQgAc3nHAjMPbDzd/
+      S1YnscX30OtUHMHjGKQniM39Am/fKzhdDvLJyxgsIZrlBSrlHA7/8bVyzGaJ2NzPUUU7waAP
+      AS+6pUtIJmMngWCkZ/AponO/RGdw4HKNI+pBEP3Y7AZkekgsnMEgBUG04XD3rMmlF0Evgmju
+      warYsPacJJe4gqi3YrEdX7uHvWSDRRjs/6KNorS5eOZdjGYLXQOj1CtlipkEoYkTLFz8nHI+
+      w6lXv8vnP/sv9IxOcuylN/dVXrhtTfd1q7qD8kwfFNmVs+hsR3C6H81dBAezC6Sq1KtlFEWh
+      Xikz9fEvaMst6pUyw6eew2A0odMb6Dt6CkEUySe1zWb7hafv1Ue28sMB7QKJOj3P/95/hyy3
+      MBhN9E+eWnf++d//EwCOPPetfZBO43HiYLYAgCCKGIym/RZD4zFnTxQgE1nmxhcfruuKVAq3
+      HR41qhVKmRSK0mbh4mcU04m1c+nVJdKrS0Bn5iextIWDVKDVbHQGyInIpufzydi634VUjFI2
+      RT4R7Xxu0lWqFvOoyp4sVWo8guxJF8jbO0A2toJJsjFz7iMsdheRG1c48vyrpMLzOP3dtGWZ
+      XCJCYGgCs83O0tXzmK12SpkkAL7QIG25RaWQZXnqAv6+IXLxVTKRZYKjR8lGw5htThzeLqrF
+      HOmVRYwWCaUtUysXmXzhdVLhearFHMVMkv6jp8gloqiKQqtZxyzZ0BtNxBdn0BuMWGwOADLR
+      MIHBMcr5DCazRL1awRMM4Qn27cWj0Tjg7OkYoJiO4+8bJr26hLu7l3I+TavZoFLIYrY6MJjM
+      1MpFWo069XKRZrWMIOrWrm81G8itJnpDi0o+S7WYxxsapJzLUC5kcXeHcPgDJJZm0JvM1Ctl
+      jGYLBqN5LY9GtYK3p59GrdI5oKqIYuc2q8U8JouE3GxSzmdoN5vYXF6c/m4WL31BYGgMg8lE
+      PhF9aApQKpW4ePEioiiSy+UYHx8nkUhgNpt55pnOzNFf//Vf8+abb5LJZFhZWSEUClEoFHjl
+      lVcQxQPbi30k2DMF6J04gcXmILE4w+CJpyllkhglK0azhN3jR9TpMZotpFYWMNqduAI9OH3d
+      6/y5+0KDWB1uDGbL2jqATm+gVa9hc3uxe7ooZ9P0H3uSermI0SKh0xu4NZPbO3ECQRDQ6Q0I
+      oth5ywsCAgKqqnS6OoKAqqo0a1XkZgOnv5tSNsXEN76FgECrWcdid+3VY9kWm82GLMsMDQ0x
+      MzOD2WwmkUjgdrtpNptcvHgRnU5HtVrFYDDw3HPPcebMGQYHB7XKvwfsmQJIdicA3cMdZ6ae
+      ns6ihc3lXZeuq7+zrC45NlayW+cAAoNja99NFgmbu5OP2WpbV95mMtziboPoO9PuZ3dncXGR
+      RqOBTqejv78fo9HI2NgYhUKBRCLB6dOncblceL1ewuEwXV1dPPnkk5RKJdrtNjqdbvtCNLbk
+      QE6DHiaGh4cZHh4GoK9vc0UcH+/4zfd6Oy+BI0eOPBzhDgGaAhwAStk0c+c/3tU1o0+9hN3j
+      2z6hxl3RFOAAUM6luXDmJ9snvIPu4SOaAuwBmgIcEm7NNnk8HmKxGE6nE1EUMZlMHD9+nHQ6
+      zfLyMoIgUKlUkCQJl8tFuVzmxIkTj+2A+/G8K40N2O123G43rVYLj8dDu92m0WiQy+VQVRWf
+      z0ez2WRycpKenh4EQeDzzz+nWq0+tpUfNAU4NCwsLHDhwgXcbjfhcJhCoYDdbicejxOJRJBl
+      mWazSbPZ5Be/+AUOh2NtNqrd3nHsReLxOL/85S9JpVKcPXuWq1evcvHiRc6e7YQ3VVWVv/3b
+      v2VpaYn333+faDTK4uIiFy8+OKOXu6F1gQ4Jd842hUIhRFFEVVUmJyfXplK/+c1vAvDnf/7n
+      91xOd3c309PTtNtt8vk8NpuNyclJrl+/DsBXX32FzWYjk8lgNBq5dOkS58+f58/+7M/u8w7v
+      DU0BDhGNWpVsNLyrazw9/Zgs0o7TR6NRpqY6Qa0DgQDlcpnz58/z8ssvE41GsVgsxONxTp48
+      SSQSYWBgAKfTyaVLl3jttdd2JVsul8PtdjM9PU0gEMDpdJJMJunu7iafzxOLxRgaGmJxcZFQ
+      KITBYECWZWw221oeD0UB5GYD/UPc2dmq12jWKphtTnSGu0WZ7aC024iHYEEpGw3z8//4l7u6
+      5nf++39PcGTn6w49PT388Ic/BKDVamG44/n39PTQ09PD5OQkqqoSDAbXnd8N8Xic3/zmNzz7
+      7LNUq1UkSeLcuXPkcjnefvttrly5wpNPPsnMzAxdXV2YTCY++ugjnE7n2hYT2AMFKKZiNGsV
+      RFFHvVxEVRSc3SEEQSAxf51MeB5Rb0DU6Zh46S3arSb5+Cq56BL1UhFRr8fm8eMbGEVvNFMt
+      ZGnVqrRbTVRUVKWzhUFuNqjk0qiqik5vwOr2YnX7UdoybbmF2eqgLbeI3riEyWLDKEmUMylM
+      NjtWtw9Rp8fq9mF1+zAYzaiqQiWXJh2eo5CIgqoy9NSLmKwOmrUy3r6R7W9eY1NK2TTlXHpX
+      1+xGyaDT1fL7/SSTSURR5MyZMzQaDcrlMgATExOcPXuWkydPsrq6yvz8PJcvX+b73//+unzu
+      WwHkRp1SOoGqKJisdkSdnuVLnyEAXSNHGTz9AqJORymdYPa3ZzBKEs5AiPEX3sBsc6AoCqV0
+      nEx4nnarieTyIjnd6AzGzj4eUUQURHRGE5LLiyiKtFstytkk1XwWg9mCzmCgXioiiCJPfueP
+      17U21Zs2xIrcopxNkV6eRW40QACry4u3b4TxF96gWauy+NXHqO02+fgqdm83Rsl6v4/nUDJ3
+      /uNdr2v8m7/8T7tKH41GqVQqHD16lJmZGSYnJxkaGmJpaYloNEqpVMLhcKDX66nVaoyPjzM8
+      PLymILe4bwXwhIbwfM1nS3DixIZ0dl+AJ37nDzccF0URZ1cPzq6dm9XpDAacgV6cgd5t00pO
+      N5LTDYBvYGzLdEaLxMSLHdvihS9/QymTwCsN71gmjYfLre4UdMYatxgcHFz7PjHR2ZfW27t1
+      PdEGwZvg8HdTTMXw9mkKcJCZ/fJjZne5heR3/91/WPdbU4BNsPuDRKcv77cYGttQzqWJL9y4
+      rzy0hbBNMEk26pW9d8SqcfDQFGALTBYbzVp1v8XQeMBoCrAFdl+AUjq+32JoPGA0BdgCu79b
+      U4BDgKYAW+Do6qGYim2fUOORZtNZIFmWqdVqD1uWA4fk9lMqlbZNp9nlPrpsqgB6vR673f6w
+      ZTlw2J95Zcdpa/kHKIjGA0PrAmkcaja0AHKzpAV2vgdKmRuPrQv0x5kNChAYfHU/5Hjk0Sr/
+      o4nWBdI41GxoARJLZ9EbtQHwbillbjB44l/utxgau2SDAuiNdq051zg0aF0gjUONpgAahxrN
+      HuAhIssygiBsOO4K9PLWv/2fdpWXK9C7pb8eVVX3tZzh08/TNbi19d1m7LaMvSpHU4CHiCiK
+      m3pZs9js9I4d27NyFEXZ13KcvgBO392Ddd9vGXtVzoHqArVbLcLXLrB09Txyq8nyze9KuxPR
+      PBdfZeHS58itJgDLU1+hKG2K6QSrN67sp+g74s4/slUvMzs3T615840kV0nnSqTTndhqhWyK
+      +aWVjZm0G9Rbd49ptlWFyaUTLC6vksut37ehtOo02mw4vl1Z27lMjKwsE0tu4R1CrlOslkmn
+      7m54tCO3jEqDQrFGNBrtfC/VO0VUcxQbd7/0QLUAOoOB/snTrExfplWv0XfkJInFWWrlIlan
+      h2I6Qf/kaWJz17G6PNRKBVRF6USRadT3W/xdsbwaZ3R0lHajxsLcMi6Xg2xZQGg28PncJLMF
+      xkZHiUXC5EsNnA4z1UIes8VEtCbRa21Raig4jAItvZWB3u3fhOl8ibHRUaavT7GyEmF0pI/V
+      5RWsFoG04sPcTBGNRPH53RRzOawmkdW6jWePhu7pHpPJJP5gP+GleTK5IkbRQP/4IInlZbqC
+      QcqKQiXbwud33FP+a4hGUol5iqlIpx6YrSTjyzgMEC5n6fG76A14N7/0/kree5LheaqFHDq9
+      gdj8NDq9HqvTA4Dk9BCbu06zXmVl+jJKW6acy2B1efZZ6t2jtmVkRSWVSqE3qGSzN2OaKS1i
+      yTRyq4WiKKTTacyiSrHRZrTPhyya8fu8pNMZRBXqirijyg+s5WmWbPgdNhKZLKJcpK2z4vV5
+      MUk2/DYj0WyF4eEg9Xobv2/zirMT3L4uQj0BFEGPzSbR7bQTS2cwqHWy+RKlunzPea9HQKln
+      6Bo5zkI4TruYxmC2ILfqhAaGqJe3bmUOVAvQqFZo1qoYTGaKmQSplQV8oSEatSrlXBqD2Uw5
+      lyYwOM6g3UFs/jqS000yPE8uEcGXHXpkfOaPjo2wsDBHV6CbXFFHyO9GEXWguJEkMx6rkYXl
+      VcZGR4lnSgx0ecEg0B3Uk07EGR0dIVOq0+V177jMwb4ellai9AQCCIDcapDX6fEFekjF47hs
+      ElVZ4GSPlZVYhsEjk0QjUWB79zObYdJBOBKnOxBAURQMooi53SQv6vB6fSiCCE51+4x2QHff
+      BFaXC5tpEqfdSji8iqtnlERymdDAwJbXCeqtCHOwtgluPxfClHYbBGFd36+SzyKIImarbc0z
+      3EEjEz2Ht+eZtc87j4O2V+igcqBaAGBTH52PYhfn62g7bA8mB04BHke0t//BZV8HwaVsiuuf
+      nmVl+tK6WZxKPkursX7+KrWyQO3mYGbp6nnC1y5Qr9w2V6yVi6RWFliZvvRwhNd4LNjXFsDu
+      8eP0BQgMjVMpZFmZvoROp0dR2og6PYGhcTKrS8it5lpc4Xq5hNlqo3toAqXdJjJzlWa9Svfw
+      be/CqZVFGtUynmAIybHzQeKDQuv+HFwOTBcon4wxdPJZVq5fxOZ0Y3P7kBt1VFWhWsjdDqwt
+      gKp0xu3NWpW23KJaXL+AY7E7qBZzNGu1A6EAoHWDDir7vg5gtFhBEPAE+1i+eh5BELE6PSQW
+      Z2jWayiKgtEiYTBZEHV6zFY7zVpnHaBSzKG02xjMnXMGkwWTZENVFPQGI63mo7U4pvHw2fcW
+      wBcaBMDm8mJz3V50GTzxNACe4Mbo6QPHn1z77u3pX/t+Zygfu8e/16JqPIbsewug8XjTqOXW
+      fR40NAV4RFn66n8jvnIVgFr6c7766H8HIBv/attrs7Ht03TIc/nMX7B09e9YnNoq4ovC6tSP
+      WJ35GanoRpfyqZWP130CpBb/iZUbP2V17uweynpv7HsXSOPe0NvGaNfDwHFy2TQebzcAityi
+      VZphZfkqZpOAxfsN2tVlfKFvkF/9HLNvkMjMz6gW43SPfJv4/K8QBQV3/1uU4x8hKwJW93Ec
+      7k70FWfwRfonX2V56h9oFq9Tlt14PF2kwp/h73+BeuZLDN6XCXR3thvU8jfIZ1ZoyW36J97a
+      KLhap1Zr0T/5XQDajRSx5S9BaRIY+y7JuX9E1LuQ2woeXx+RmZ/RaLbw+YIkotOoSpPe8e+Q
+      Xj5DrZyke/yfYzLeezXWWoBHGJNeR6PVANHELZORejWFKhewBZ6nZ+zbVNJz1KspAJrVFKI5
+      gDv4JKGJ36Ua/wDVGMTiCJBc+i3NWhad0YvN2b1WRjH5JUtX/jOi0Y/BPkYp9gn17Fdg7lT4
+      RjWNSbo93jKYvQi0KSUvs6mJi1IE3e3dn+mlDzDae7GYBZLRG6iCmeDIGwg0sXomcQefJDjw
+      HImlT5Ac3RjJk0knyCeuEpr8o/uq/PCAWgBVVcmuLmKSbNi8XRvO30tYUlVVqZcKqKqCzmDE
+      JNm2TLc69RWF+AoIAma7k8DIUeze7XdMqqpKIbGK3RdEpz/4jaOn9zSLF/9vvEf+hEL4n7ZN
+      r960q0Dt7PHXGSQMohvJ6cHqMqA3mJEbaVZn3qP/yHcAcHQ9zcCxN4hM/T0yeiSzgUg0wvDx
+      ziSFzf8EK0uf4nK8hqq0iS1+QO+RH9BubOFTVeenXf8nVBVQ2+gMZvSWLiyuEA7RRGJ57mtC
+      35RVb8Qo9WC19yDqbTTco+jEzS3FdsOu/+Xli59RyiQQdTpURUFpy9g8XTgDvTSqFfKxMOVM
+      EldPP5VsCsnlITh+klopTykVIxcNI4g62q1mJ8LjzRCqKipqW6FeKSIIIqgqOqMJVWmjKkqn
+      MlvtCKJIu9WkWauuM5cTRBHJ6aGcSdI1fISR574NqkqtmGPlyjmqhRyoKqJOj83bhd0bwGDp
+      TJ+qSpt6uUTk+gVsHj/lzK8IjB6jUSmRmL/Gidf/ANcms1H7icM7jmjswtZ1HKfdAf5ja8d1
+      ZitWxQYYcHj70QseovO/RBFM6AC3b4jYwq/xD75CeekM+fgSVt9pSqnzNJt1XIFbs2xmdEKJ
+      6Oz/h9FzDIMAvv5nKU5/udbi6My9eNwxYgvvY7AEcHlHSCyeAaMH4aY83PEJAr2j3yY6908I
+      eongwBvElz6gLuhwBV/YkF6yukhFLhIYfpP48icIog5v6Jt35Hd/7Ho3qNxq0qpVUZQ2giAi
+      6vVUsklysRWMZgl3Tz82b2CtYiYWrpNbXcLicGP3BXD1DKzt9JRbTZRWi7bc6oRDFXXrQpO2
+      WzeP76C1aMsytWIOk9WOwWTeOt3NEKvFVBy5Wactt9Dp9BjMEl1DExglK21ZJj5zBbPdQbNW
+      Q27W6bv5xtuKw7EbtEnsxnu4B38Xs8m438LsCbtuAfQGI3rD+ps3W+1bBpYODB8lMHx0y7ww
+      bP0gdxLlfS3tzYDb26bbQYhVnV5P7+RpAErpOFFtf9FNjAQnfn+/hdhTtEHwNkhOL5V8dr/F
+      0HhAaAqwDTqDgXZzG8tqjUcWTQF2gGgw0Jb3yn5V4yChKcAOsLq8VPNbuPe4T9rtNufPn6fR
+      aKAoCvF4JzBfLNaJT6aqKpcuXUJVVa5fv06pVKJWq1GpVFCUu7tH0dgeTQF2gM3TRSmTfCB5
+      1+t1xsbG+OSTTzh37hwXL15kaWmJX/3qVwCcO3eOQCDA2bNnyWazfPrpp1y+fJlPPvlkZz5z
+      NO6K9gR3gM3rp5J7MC2A1WplamoKg8FAJBIhmUxy6dIlms0mzWYTWZbp6uqiVCpRrVYxmUws
+      LCxgsVgeiDyHjYO/3HkAkBweqrnMA8k7ne4oVm9vLy+//DJLS0sMDg6ytLREJpNhcnKSDz/8
+      kJdeeolr167h8/kYHR2l0WjQbre1CJX3iaYAO8AoWWnUyg8kb5/Ph89325fR4ODguk+Ab3/7
+      2wC88srOo1Zq7AxNAXaIKOru6qn4fshEw3z+07/Z1TXPffeP1xkDbYeqqly9epXh4WHC4TCS
+      JDEwMEAsFiMYDKIoCpcuXeKJJ57gxo0bhEIh9Ho9iqJgsVge2/GGpgA7xGx3UivmkZx7b2Pc
+      rFWJL9zY9TW7oVKp0NvbyyeffMIrr7zCxx9/jKqqfPTRR/zpn/4pX3zxBYFAgPfffx9JklhZ
+      WcHpdFIoFHjzzTd3VdajxLYKUK1Wt/TdfpjQSw4yiSht8fYjs1gs6B+BXaMABoOBDz/8kNdf
+      f535+XlOnDjBZ599tjbYNpvNRKNRVFVdN9gOhe7NMe6jwrb/niRJ2yU5FIw/900EQXggXaCH
+      QSqVwm63k0wmsVgsBAIBvve9760Ntv1+P5VKhYmJCZaXlw/NYPvReH0dAB71PnAoFNr0bX7n
+      YLu3t7NBcOAuzmQfNzQFOEQ8jMH2o4amAIeIhzHYftTYVAE0V367p1aK7rcIGvfABgV4PCyX
+      NDR2xgYFqJYi2tvsHtFeHo8eGxSgVopqf+Q9oHUbO8TjcS5fvszzzz/P5cuX8Xg8JJNJBgYG
+      GBwc5MKFC6RSKU6cOMG5c+d45513CIfDFAoFTp069dDlfbTn9jQOHN3d3RiNRux2O+12m0ql
+      Qr1eJ5/vePAuFApks1ncbjcOhwNVVfnxj3+8bwtumgJo7CnRaJSpqSlu3LiBJEnk83ncbjcr
+      KytEo1FqtRoej4fZ2VmmpqaIRqO8+uqrXLq0P44HtGlQjT2lp6eHH/7whwC0Wi0MBgPtdhtR
+      FBEEgWAwSLvdRq/Xc+LECQD6+/dvnUFTAI09p5RNU96lAVFw5Mj2iR4AmgJo7Dlz5z/mwpmt
+      vElvzr/5y/+063Ky2SyfffYZJ0+e5KuvvsJqtfLaa6/RaDT4q7/6K9555x1SqRRHjx5leXmZ
+      crnMyy+/vC4PbQyg8cgyMzOD3W5nZWUFvV5PIpEA4L333sPlcqHT6RBFkVgsxrvvvsuxY8c2
+      5HHgFKDVqCHf9MMjt5rroke2ZZl6+bbTVaUtc8uzY1tuPVxBNfadyclJms3m2u7WiYkJotEo
+      77zzDseOHcNisSDLMjqdjj/6oz9idnZ2Qx4HqgvUqFVYvHyOXGyV4998m6XL56gW8xx/5S2s
+      Tg83Pv+AZr1KaOIkNreXs//5/+Dlf/5vic1fJx1Z4oXf/5P9vgWNh4jD4eC1117b9Nyzzz4L
+      dAbld+NAKYDJYsVkllAUGavDzcjp57ny0c8xmjs2Ca1GHVdXD/HFG7AIw6eeA2D8mZep5B+M
+      0brGwSU2P018YXpX15x+Y71v0wOlAO1Wi8GTz9BqNshEllm8/AVPvfWDTsTHRp0jz3+byMwU
+      JslKIRWnWshhkmzYPb7tM9d47IgvTO96sH2gFaBRqzB/8TN0egMWhxOjxcrUx7+ke2iCci6D
+      xeagUSkx8Y1vIYo6MtEwNreP65+eRRBFonPX6Rnd3BO1hsZmHCgFkBwuTrzy9trvU6914kg1
+      qhW6BkYRBIGescm187cMNY4+/+rDFVTjseFAKcBWmO4ImqGhsZc8cAUoZhIUM50gbd1D42vB
+      NdpyqxNh5g5j61wiguRwY7JINGpVYnPX6BocQ7I7N+QrNxvoDMZHykhdluVN5ZWcbk6++t1d
+      5SU53Vt669jKf9HDKqdrcGzX5ey2jL0q54ErgNEsEZu7zuCJp2nLMjNffETP2CSr052YssOn
+      n2f56nkCg+MUUjH0BhMmi8TF93/C0W+8CqpKLhHBZLGiKgqrM1fw9w0z9fGvGDu/IFIAABcH
+      SURBVJg8TdfgKPMXPmXwxNM0qhXSq0tYnW6qpQIjp77B3IXf4unuw2iRaNZrGIwmYgvT9Iwc
+      xeHbPnDeXiKK4qbG9U5fgKff+v6elaMoyr6W0zt2jN6xjYtOe1nGXpXzwBfCzFY7FrsDp7+b
+      ufMfM3zqG8xf+BSHL0Bw9CiiIGKxO7j+6Zm1axSljdEs4fAFMNvsLF89Tya6TPj6RVqNOkaL
+      hKsrSM/YMaY//4DxZ17hxhcfEr52gd6xYySW56iXiyxd/RJUmD3/MZHZKbLRMKmVBURRRG80
+      Pehb34AoirRaWy/YFQsF7urwXG5QaWyMU1DM51HU279FOm7W683baSuVytr3anXndr65TIpq
+      vQFqm3KlRiGXoVSprd3PnZTyWXKFMrVabVfl5PN5ms3mps/m62W0GjWSqQzqhpR3QWmSL1SJ
+      R1dpygqZZIxCuSPjQx0DiDo9lXwGVVXR6Q0U0wlS4UVcgR4MptvejkVRR6tRJ726iMlio14p
+      k0/GcAd6MZjM3Pj8Q0wWiWImiSAIVPJZBEFEpzdgMFswmi2IgohOb6SSzxIcOUq9UmLwxNM0
+      a1VK2SSzX37ME69+52HePgCRaJTB/hALcws4fAEquQROfy8uu0RsaRpL91FM7QLFWpugz0Ei
+      mcQX6CWZSBDyWVit2TBUkni6u8nGE/h7Q+QKBRwu1+1CqikqooP0zA2CXR6qskC9VKLZrNDV
+      M4CoKuQzSUrVBoLeSI/fSTSepScQIFUqYNULNBQ9AYeOYjbJaqTEEZ9IpKTiMKjo1ST1rhH8
+      9tvx3ZRGgZV0ldF+G9euXsTlD2GTTLTqFYp1BbOuTUPRI+kVkvkqoYCLaDzL0OgohUKBVDKJ
+      wWRicBuXLJFYkoDPxfTMPE6LHtFkg1aFclPF73GhF6Aht8gWqnT5XBQLJQzIlOpNfMEQjVyE
+      QttGfWUR59FJdH/xF3/xF7cyv2UKKdm3DiB3L1idHkySFV9okGxshcFjT+Lq7qVeLhEcPUql
+      kCU0fhyHL4BJsiHqdAQGxyimE1hdHuxuHw6PH4cvQLWQo3/yFP7+Ycr5DIPHniQdXWb4iWdv
+      Xm/F5vLiCvTg6x0EQUCyO/H2DGC0dBbUKoUs/ZOnNgT7ux9qpSiSvXft887jcPuZ5gsFTK08
+      LecglUwEpd1GZzQj6RpML2VpNasYjQZEUaBUrhGwKlwMF+hyGakXSxSLOWo6GzQryC0Zo0FE
+      Vgw4HXdMFDTLXFtMIFlM6FFIZ/IY9XrMVhu9wW4iKxEEUU9bUTAa9RRLVUb73Vy+sIB/eJDo
+      wjwtRaXVhm6ngUwFEEUkvYAgiAT9VjIVPS7b7efXrmWpiC58Tkun5VEVSuUy9UaDwYF+spk0
+      mWwBVVVRVIVqtcFov5vpmQhOf5BGpYhOr8d1pyJvQr5QwN8VIJ/NkEknUNAhiAI6AerlCvla
+      jUI2g6HdIFmq0d8/QLFYot1uE+wO0MhnEF0B2rUybo9n92FSNTZnp2FS52encXq7KGazWF0e
+      WpUiRqsTs6hicXso5bK3m32lxfLMFJ6R0zRLWQJeJ3XBRCERw+XzUi4UKJXKjB07Tr1UAMDp
+      dEKzxNRCHIfDgdCq0lB0uOxWTAaBYkPFJIJOr1vz+CYoLVLZAj63D8nrIhtZoYkeVW4R8juo
+      YqBQqGOz6Cjm0jQxMDI0wPqhqcrS/CwmuxeLsTOxIbfbiEqLqiyiNMrIghG7SWBqLszpyVFS
+      2QKKaGB8eIBMJkOzXqGFkf7ebrYin0mRzhXwd/dSysQRzTYkUyeaqMOiI5yq4zQr5Mt17E4n
+      bkkgmlPodhqYD0fp7esjGVnFYLHRHwpqCrBXPIg4wdVSnnSxftcKUalUsFr3fppYbTeoNnVY
+      LXvbS85nktQVPd1+D/Dg5L9FrVLBZLVuOdh9JNYBDiuS3UW//e5pHlTlEXQmrA8gCI3L27Xu
+      94Os/ACWbfI/cNuhNTQeJpoCaBxqNAXQONQ8kDFAW5bJx8KYJBu2r/X5VFWlVa+tTUluhtJu
+      r9siAR3rsEa5iKoo6AxGjJIN3SbBKdqyTGrxBoXEKoIoYpLsuIJ92P3BbV2cq6pKIbGKzdO1
+      tlB2t5XI3aA5zjqY7FoBFs9/TGZlYd0xo0XC5ulCbjUoZ1IoShtXd4h6qUC71cLTN0S9VKBa
+      yNGsVTCYzGtmj19HVVVEnR5Vaa+ZOwqCgKg3YLbZEUVdRxkqZZT21/bWCALtVpPAyCTBiZOo
+      qkq9XCA2c4XZT99fy99gMmNxuNCbzIg6PW25hVyvUUzFcHaHmPntGWweP81alXImwbHXvoc7
+      eO+uO7RZtYPLrhVg6KmXGHrqpXXH6pUS5UwCvdHMyDPfQmcwrJ2rFnIUUzFs3i6sTi/GB7iz
+      U2m3EW76n7mFs6uHwPB6GwG52aBayCI3GyhtGVGnx2AyM+55a+1tX84k0ZstlNNx8tHwfSmA
+      xsFlT7pAZqsds3Xz+TrJ6X4ggeU24+vdpq3QG004/MG7prnVdRMFkcj1+/NapnV/Di7aOsA2
+      GCUrzVpl+4TboHWDDibaLNAOMJgttOq1/RZD4wGgKcAOcHWHyMdX9lsMjQeApgA7wBnopZDU
+      goY8jmgKsANs3gClVHxfyp777H8mlVwFoLB6litf/DUoZbLJjV7Ovk429tXOCqkvceHD/5Wl
+      qb9nefrnmyappT7h6qf/J+Fr/0Bi5cKO5b9fotN/y6Uz/575Kz+ikIuQjV/c0/y1QfAOMJjM
+      yHe4aHyYmD1P0yxchq4Q5WoNh9UBohGlWaKS/Ix0Lo9OKeIeeIda9iq+0HOkVz/H4eohMvMz
+      quUswcGniC38FtQWXSPfIRf+OQpG7F1PY7N7QVXx9L1G/+Aplq/9NyqpL1EsE9itBlKrV/H3
+      PQ0odI3+Pl3+IOHr/xVVHiUy/wECbbxDv0tx9QxtVY/N9wT13CXaqp5GNUfo6A/IrZyh1VYR
+      DB78Ph9Ls18gSSZMzicQW6vU6lWM1n4cNguJ6DSq0qR3/DuIAvQc+Rcoio7g5B+iA9KrqyBn
+      mb/yHhbJTFMxYhSbSN3fQmwsUa2UUTEQHHpxR89XawF2iNFipV4pbZ9wzxHQCQKyXETQ3zIW
+      UahXM7TqKbz9bxMMHaOYT1KvdpwP1KtJjLY+3MHThMZeJ7f8a/T2XiSrhcTqZRq1LAZLEKvN
+      s1ZKPvpblq78CL3Ug+SdJLvyAaXYpxic42tpcqtnmfny/8LZ/Rz51V8jWnqR7C6Sy1/SrGXQ
+      m/1YHV00mg26h16lO9hHNrNMrdYiOPwGcnUVVS4j+Z4mOPom1dwMzXoBBBMOzxCJpU+QHN0Y
+      yZNJJzZ9GvVqEtQGJucEPcMvojcF6Rl+kXJmkUz0AibJQzl9lc1N7DeybQtQrVa3tNg/TFi8
+      AbLxCPau29ZeFosF/SbbMfYaX3CUha/+jtAT/5rU3H/bNr2q3LQFvrmSrjNYEEx+rFI/NtGI
+      Xn+CZjXC6uwZ+sbfAMDV8wIDw8+wPPV3IL6IUWyRLVYZ6HGs5esOvYpQPo/cqmPQS+iNXiT7
+      IFavEb3+GVq1BKszv0C8uQ5ZK2cweo5Qp3VTHIWv+3fwDbyB0q6wcuNdzAYjRqkHq70HUW/b
+      9XMS9TYkR4jQkT/YUM5WbPvvSdLWe3YOE7ZnXt4XFywO7zh66xjOQBTJZMDpnwT0OLzDGPUy
+      oh4E0Y/NbgB9L7H5X4KuU2kd7l5iS58Q6H+N5OJZcgUdju7nKMR+jSy3cQc7vlXRuxCal4nO
+      /BS7/ykEwN97hNVofk0OvdSPFRtW/3fIRj7DGnyF2tKvyVV02P1PUYx/Tktu4u5+ivzqL0ks
+      fYCg76LL5kD09BGb/ydsvicQjLaOrDfvoZS6QLVawOk/gcvTQ3z5EwRRhzf0zdvPwD+5VqEd
+      3nEQbTjcPRs+TX4P2dhFEE1029fvQdsKzSJsj3gQFmH7RrvC6uwZAmPfxaDbfS85tfJb/H0v
+      PADB9h5tEKyxEZ2V0JHv3fPlj0rlB20QrHHI2dACGIx2bfPWPSA392OGSON+2aAADt/+ROvT
+      0NgPNihAMT1NS3ub7Rq5WSIwuDdu2peXl9HpdPT29lIoFHA6nZw/f55Tp06h1+uZm5vDbrd3
+      rOtaLXw+HyaTiXq9rs3a7ZINCtBqlh6tGYsDwl52G+fn53nppZeYmZlheXkZm83GwE2XgbIs
+      s7q6yksvvUQikWBqagqv10u5XOaFFx6dwedBQRsEH0BCoRDvvfceExMTGI1G0uk0uVyOK1eu
+      IIoiPp+PM2fOsLKywsTEBPl8nkKhgNG4d64eDwuaAhwwFEUhk8kwPDzM9evXqVQqPP300+Tz
+      eXp6eojFYhQKBYaHhymXy+RyOSYnJ/nWt75FKpXab/EfObR1gAOGKIo8//zza7+PHu3YM98Z
+      7rO3t7MdY3x8HI37Q1OAA8hn7/4N2Vh419c9990/XoubprEzNAU4gGRjYeILN3Z9XbO288AX
+      Gh20MYDGoebAKUA2tsLi5S9QVYXY/DTJ5bm1c9VinuWr51FVlXRkmZXrl1BVlVK244yruMUe
+      cg2NrThQXaBaqUD42kXGnn6RfCJGIRWjUa1g93ZhsTlYuvIlDl+AxUtfUEjF8AT7iM1fJxNZ
+      xmi2EBia2O9b0HjEOFAtQCEVp14ucunszxB1ItnYCpVCFqO546i+Wa/S1T9CpZClXi2TS0Qo
+      pOLkEhGy8VVcXXd3dqWh8XUOVAvg8AUwWW2YrTbiizP4QoM0qhUKqThtWcZokYjMTuEO9BI6
+      cpLE4ize3gHkZgOL3UlyeZ6ugZH9vg2NR4gDpQCSw8Xg8adoNup09Y+QWJpFpzfg7ApSLeQZ
+      fuIbZGMrBEeOkFiaxRcawBcawmJ3YHV6KGWS+30LGo8YB0oBANzdobXv3UO3F3rsHh8APaNH
+      N5yzubwADz3wtcajz4EaA2hoPGweWAuQWJqlnM9gd/vX9cvr5RJm23pP0rf67q1Gg5XpS+gN
+      RkJHTiCKm3t7Tobn6erfvK9/Z/7J8Dz1chF3dwi7x7+hvO3yOuyUSiUuXryIx+MhFovhdDqR
+      JIloNMrrr7/O8vIy09PTTExMsLq6SiAQwGAwUCgUOHXq1H6LvyMeWAsQGBzDaLbQNTBCenWJ
+      pStfUs6lmfnyN6RXlyik4qzeuEw5l6FRLQMgtxpYbA7c3SFSy/NEZq6QT0ZZmb7E4pUvadSq
+      hK9dILO6RDGdQFHaZGOr1MpFVq5fJBMNM3PuI4o3xwL5ZJS+I09gc/tILM2xePkc9UqZRrVM
+      vVwifP0iufjqg3oEjzx2ux23202r1cLj8dBut/H7/SSTnec7ODiIyWRiaGgIk8mETqfjxz/+
+      MaFQaJucDw4PpQtULeYYPPE0mWgYd3cvvtBgJ0K63kB6dXFd2vjiDJnIUidCS6OOxebEYLIQ
+      GBglfO1Cp0J7fJRzaVRFoZCKkQrPEzryBN6eftzBEI6bvv37J0+zePkcmcgSjWqJwRNPk1zu
+      uBRMhufoO/IEkuPukckPMwsLC1y4cAG32004HKZQKBCNRjGbzYTDYaLRKMFgkM8++4xYLIYk
+      Sbz66qtcunR/8RQeJg9lENyWZaJz1zCaJRq1CtnYCtnYKtZNAmd0D40THDlCrVzE5vJiMJkp
+      ZhJUClnsbh+R2SnKuTSeYD+xhRuU8xm6BkaJzFzFFeilVi5SzqWxuX1kIsuYJCtys0mr2SAy
+      O4XF5qBeKaM3monOXaNazG8isQbA8PAww8PDQMdGQRRFVFXlxIkT6G4GI7lzlypAMPhorcU8
+      UAXoO/IEAIMnnkZuNjCYzKiqiqoouLt7UdrKukB3FpsDi82x4fvo6RdQFAW9wUBbbtE7fhxB
+      EJBbTULjx4Hb4ZHGnrztE7JndBJVURB1OlRVXZPhFm25hW7s2IN8BI88sfnpXV9jtEiPzK7U
+      h9ICCIKwVvEEQUC4+fbQ6XfWAxN1urXwRzr97fhjeoNxXZqbBawr91ZZd8pwizvz0ticn//H
+      v9z1Nd3DE/zuv/sPeyrH9PQ04XAYr9dLPB5nbGyMVCq1Zj/x05/+FJ1OhyRJ5PN5uru7CQaD
+      VKvVNZuKzdCmQTUeCY4cOYLRaKTZbPLGG29QLBZpt9sYbgZkNJlMxOPxTksvy7RaLX71q19x
+      5MjdvZxoCqDxSHD9+nUikQhWq5UPP/wQl8uFwWBAFEWi0Sg9PT0cOXIEk8mEy+VCkiR+8IMf
+      MDU1ddd8D9xKsIbGZhw9enRDV2Z0dHTt+9cH47dwu+8eoVRTAI1Hgtj8NPGF3Q/Iu4ePEBzZ
+      uhukKYDGI0F8YZoLZ36y6+tOv87hU4BmrUouFqZZLROcOLlutkhD407uSQHarRalTBwQMEk2
+      TDYHonh7PK2qKoVEhFI6TvfoMQw3DVpUVSW9PEv48jlU5WbUGUHA5vFjtjvJriwiNxtILg+u
+      7j7q5QK1Uh5nIERg5Ci5yDLhy58jCCIWpxtnoBdXdx/2m7tAm9UKc1/8mma1grtnAIPZwlfv
+      /oi+E89SyaVIL89hdXsZe+ENTJKNSjaFqirYfd1r8lWyKVanzpOPr9I9dpy+E89QzadZufol
+      Ey+9vW7dQuPRZ9f/ZuTaBRLz19cqXaNaplEpoSpKZw5eVVGUNjZvFw5fkIvv/R3e/hGa1TLF
+      VBxXMMSJ138fo2QFOpUuH1+hVavS++ZpDCYzlVyafHwVT+8gkstLdnWRqfffxRno5anv/Smi
+      Tke1kKWYiLJy9RyVbBoEAUEQGHrqRbx9tze3+YcmWL74Ka7uEMPPfJNiMsrU+++iqgrWm9uo
+      S+k4ot4Aqork8tA9dpyJl99m5eqXfPGPf43V5WXoqZe1yv8YsqcRYlRV3RBG6NZb32S1Y/MG
+      1rUUB4nNZL/b8a+zkwgxsizvKK/Z8x9TzmV2IX2HsadexOb2bZtup/cE3FO/2+b2MvbUSztK
+      u1NZ4gvTxO7BVUxweILu4Yc0BtjsRgRBwD948D2YbfUn7GVcMFEUd/QCOPLsN7dNcz8oirLj
+      F9HTb33/QMjSO3aM3gewbeVgvo4fU+72R7eaTRSgVqvRbjUpV6ooN8/VajWgE7HzTlRFZmVl
+      FUWRacmd1IVC4b7k6GTcJhGPU2u01g5VKpWtZa9XiMRTtFq30+9Ejh3JgtrJS25QayrbpIVi
+      PkMmX7oti9KiUNraYZimAAeEdjnBairP519cJLwcplqvsXrtKvPJNItzN5hdWKJWq1LIpZmf
+      naHcaDM/cwO310OjkiGS6vzJS9MXSRQb9ydMK0+5ZWJ+doZ0Iko4EicaiVDKZ5iZXSBXKFAp
+      ZkgnMjQUuDG7gNtqIRyNAqA0Cpy/dIPtq+v2VNJRrs5HoJ7lwrVZMvkSK0vzxFMZCoUChUKB
+      RHSFSLxjo7C8EsWkF4jclCW+usLyze+boSnAAcHs6SU5fZH+/iBlVSSXzWKV7AS6fFgdLow6
+      yGYz5IoVRga8pLM1RsYnSKwukit03s6NfJyyYCceXtymtO1JRFcR9CaikRiFQmfLeCKTZ6Tb
+      zNJihNl4kUxiHqMIE2PDzM3eoH4zPPHy4goem8JyonjfcizHkhhraTLVNj19QxRS8zRUB5Vi
+      nnQ6TSaTIRKLU8h3ZBwIBZlfuu1XNZHOUEzEaWyhjdq0xoFBxNc3wGBfgMVIAbvVgFMysLIS
+      x+3sGO202zI6nR50Rlw2PcV8jjZ67C4fKytREm07Lzz7JLls9v5E0VlwOUxYbTbMDjN1RcRm
+      MaFDZjFR5vjJcaIrcfTuMQQgm81isjrxuSQWFhax+XsY8nrI3q8cQHfvAJ7jTrKJGLV8mK6u
+      Ecq5JAarHYteRjV6MBt1KGJnp282m8XhcGLStQlH4vQNjuCyGSlUGpjspg35a3GC94jHKk7w
+      IULrAmkcav5/AEjyfnRVDcAAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
